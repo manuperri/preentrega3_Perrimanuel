@@ -1,0 +1,121 @@
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+   
+    margin: 0 auto;
+    width: 400px;
+   
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    
+    font: 1em sans-serif;
+  
+    
+    width: 300px;
+    box-sizing: border-box;
+  
+
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    
+    border-color: #000;
+  }
+  
+  textarea {
+   
+    vertical-align: top;
+  
+   
+    height: 5em;
+  }
+  
+  body {
+    background-image: url(../imagenes/fondoclaro.jpg);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+      }
+      
+
+      h1 {
+        text-decoration: none;
+        background-image: url(../imagenes/fondo.jpg);
+        font-size: 50px;
+        padding: 0px;
+        text-align: center;
+        margin: 5%;
+        color: white;
+        }
+        
+    
+    .principal {
+        position: sticky;
+        top: 0;
+    }
+
+    .espacio {
+        background-image: url(../imagenes/fondo.jpg);
+        padding: 40px;
+    
+    }
+
+    
+    .flex-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+  
+    
+    .hero-content p {
+      text-align: center;
+    }
+    
+    @font-face {
+        font-family: 'KosugiMaru';
+        src: url(../googlefonts/KosugiMaru-Regular.ttf);
+    }
+
+    
+  .grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 100%;
+    align-items: center;
+    margin-left: 150px;
+  }
+ 

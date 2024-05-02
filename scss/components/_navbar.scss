@@ -1,0 +1,23 @@
+.nav{
+    border: 100px;
+    color: rgb(0, 0, 0);
+    font-weight: bold ;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    }
+
+.nav-link, .logo {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 20px;
+}
+

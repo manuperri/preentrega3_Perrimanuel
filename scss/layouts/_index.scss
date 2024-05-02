@@ -1,0 +1,31 @@
+.producto-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .producto-content h2 {
+    padding: 15px;
+    background-color: rgb(47, 144, 201);
+    color: #000000; 
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .producto img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    
+  
+  }
+  
+  .bg-blue {
+    background-color: rgb(73, 109, 211);
+
+  }
+
+  
