@@ -1,3 +1,68 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-content h2,
+.hero-content p {
+  color: rgb(0, 0, 0);
+}
+
+.hero-content a,
+.boton {
+  padding: 15px;
+  background-color: rgb(4, 0, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+}
+
+.hero img {
+  width: 30%;
+  height: 400px;
+  object-fit: cover;
+  padding: 10px;
+  box-shadow: 2px 0 20px rgb(12, 100, 182);
+}
+
+.hero-img {
+  width: 80%;
+  position: relative;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-img span {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(148, 77, 214);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+  z-index: 1;
+}
+
 .text {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -49,6 +114,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding: 15px;
 }
 
 body {
@@ -108,7 +174,7 @@ button {
 .footer-img {
   width: 150px;
   height: 150px;
-  border-radius: 100%;
+  border-radius: 5px;
 }
 
 .nav {
@@ -131,21 +197,25 @@ button {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 24px;
-  padding: 20px;
+  padding: 15px;
+}
+
+main {
+  padding: 30px;
 }
 
 .producto-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 5px;
+  padding: 15px;
   color: rgb(0, 0, 0);
 }
 
 .producto-content h2 {
   padding: 15px;
-  background-color: rgb(47, 144, 201);
-  color: #000000;
+  background-color: rgb(12, 100, 182);
+  color: rgb(0, 0, 0);
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
@@ -158,7 +228,11 @@ button {
 }
 
 .bg-blue {
-  background-color: rgb(73, 109, 211);
+  background-color: rgb(12, 100, 182);
+}
+
+main {
+  padding: 30px;
 }
 
 .hero {
@@ -181,8 +255,8 @@ button {
   width: 30%;
   height: 400px;
   object-fit: cover;
-  padding: 10px;
-  box-shadow: 2px 0 20px rgb(12, 100, 182);
+  padding: 15px;
+  box-shadow: rgb(12, 100, 182);
 }
 
 .hero {
@@ -210,7 +284,7 @@ button {
   width: 300px;
   height: 300px;
   background-color: rgb(148, 77, 214);
-  border-radius: 100%;
+  border-radius: 5px;
   position: absolute;
   bottom: 30%;
   left: 30%;
@@ -226,19 +300,29 @@ button {
 .hero-content a, .boton {
   padding: 15px;
   background-color: rgb(4, 0, 255);
-  color: #000000;
+  color: rgb(0, 0, 0);
   border-radius: 5px;
   text-decoration: none;
   width: 150px;
   text-align: center;
 }
 
+main {
+  padding: 30px;
+}
+
 .video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   height: 400px;
-  padding: 20px;
-  align-items: center;
+  padding: 15px;
   margin-left: 25%;
+}
+
+main {
+  padding: 30px;
 }
 
 .map {
@@ -248,11 +332,15 @@ button {
   height: 500px;
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .hero-img {
     display: none;
@@ -260,13 +348,13 @@ button {
   .hero-content p {
     display: none;
   }
-  .hero-content h2, p {
+  .hero-content h2,
+  .hero-content p {
     margin: 5vh;
     font-size: 2rem;
   }
   .hero-content {
     height: auto;
-    flex-direction: column;
     text-align: center;
   }
   .product {
@@ -280,22 +368,18 @@ button {
   .hero img {
     height: 300px;
     width: 300px;
-    flex-direction: column;
   }
   .grid {
     grid-template-columns: 1fr;
     height: auto;
     flex-direction: column;
-    margin-left: -10px;
     text-align: center;
   }
   .grid img {
     height: auto;
-    flex-direction: column;
   }
   .video {
     height: auto;
-    flex-direction: column;
     position: relative;
     margin-left: 160px;
   }

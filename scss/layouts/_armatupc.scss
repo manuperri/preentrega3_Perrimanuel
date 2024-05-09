@@ -1,8 +1,15 @@
+@import '../variables';
+@import '../mixins';
+
+main{
+    padding: $padding-main;
+}
+
 .video {
+    @include flex-center;
     width: 50%;
     height: 400px;
-    padding: 20px;
-    align-items: center;
+    padding: $padding;
     margin-left: 25%;
     
 }

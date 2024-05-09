@@ -1,16 +1,21 @@
+main{
+  padding: $padding-main;
+}
+
+
 .producto-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 5px;
-    color: rgb(0, 0, 0);
+    padding: $padding;
+    color: $text-color;
     
   }
   
   .producto-content h2 {
-    padding: 15px;
-    background-color: rgb(47, 144, 201);
-    color: #000000; 
+    padding: $padding;
+    background-color: $shadow-color;
+    color: $text-color; 
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
@@ -24,7 +29,7 @@
   }
   
   .bg-blue {
-    background-color: rgb(73, 109, 211);
+    background-color: $shadow-color;
 
   }
 

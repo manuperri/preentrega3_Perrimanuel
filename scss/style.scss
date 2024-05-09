@@ -1,4 +1,5 @@
 
+@use '../scss/hero'; 
 @import 'base/general';
 
 @import 'components/boton';
@@ -10,81 +11,77 @@
 @import 'layouts/armatupc';
 @import 'layouts/conocenos';
 
-@media (max-width:768px) {
-    .hero{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .hero-img{
-      display: none;
-    }
+@import 'variables';
+@import 'mixins';
 
-    .hero-content p {
-display: none;
-    }
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-    .hero-content h2, p {
+@media (max-width: 768px) {  
 
-      margin: 5vh;
-      font-size: 2rem;
-
-    }
-
-    .hero-content {
-      height: auto;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .product {
-      
-      grid-template-columns: 1fr;
-      
-    }
-
-    .encabezado {
-      height: auto;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .hero img {
-      height: 300px;
-      width: 300px;
-      flex-direction: column;
-    }
-
-    .grid {
-      grid-template-columns: 1fr;
-      height: auto;
-      flex-direction: column;
-      margin-left: -10px;
-      text-align: center;
-    }
-
-    .grid img {
-
-      height: auto;
-      flex-direction: column;
-
-    }
-
-    .video {
-      height: auto;
-      flex-direction: column;
-      position: relative;
-      margin-left: 160px;
-    }
-
-    .nav {
-      height: auto;
-      flex-direction: column;
-      text-align: center;
-    }
-
-   
+  .hero {
+    flex-direction: column;
   }
 
-  
+  .hero-img {
+    display: none;
+  }
+
+  .hero-content p {
+    display: none;
+  }
+
+  .hero-content h2, 
+  .hero-content p {
+    margin: 5vh;
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    height: auto;
+    text-align: center;
+  }
+
+  .product {
+    grid-template-columns: 1fr;
+  }
+
+  .encabezado {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid img {
+    height: auto;
+  }
+
+  .video {
+    height: auto;
+    position: relative;
+    margin-left: 160px;
+  }
+
+  .nav {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+}

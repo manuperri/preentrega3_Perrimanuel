@@ -1,6 +1,6 @@
 .nav{
     border: 100px;
-    color: rgb(0, 0, 0);
+    color: $text-color;
     font-weight: bold ;
     display: flex;
     align-items: center;
@@ -16,8 +16,8 @@
 
 .nav-link, .logo {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: $text-color;
     font-size: 24px;
-    padding: 20px;
+    padding: $padding;
 }
 
